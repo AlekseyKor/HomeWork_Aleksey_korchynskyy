@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class HomeTask {
+public class HomeTask2 {
 
     public static void main(String[] args) {
 
