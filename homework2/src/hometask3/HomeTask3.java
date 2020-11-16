@@ -19,9 +19,9 @@ public class HomeTask3 {
         //oddArray();
         //lowestElementOfArray();
         //highestElementOfArray();
-        //swapPositionInArray();
+        swapPositionInArray();
         //averageInArray();
-        chessBoard();
+        //chessBoard();
 
 
     }
@@ -237,8 +237,9 @@ public class HomeTask3 {
         System.out.println("Минимальное значение = [" + min + "]");
 
         for (int i : array){
-            if(i == max) i = min;
-            if(i == min) i = max;
+            if(i == max) {
+                i = min;
+            }else if(i == min) i = max;
 
             System.out.print("[" + i + "]");
         }
