@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class HomeTask3 {
     public static void main(String[] args) {
+
         //oddNumbersFrom1To99();
         //factorialN();
         //oddNumbersFrom1To99While();
@@ -22,7 +23,6 @@ public class HomeTask3 {
         swapPositionInArray();
         //averageInArray();
         //chessBoard();
-
 
     }
 
@@ -243,9 +243,6 @@ public class HomeTask3 {
 
             System.out.print("[" + i + "]");
         }
-
-
-
     }
 
     //Найти среднее арифметическое всех элементов массива.
