@@ -20,7 +20,7 @@ public class HomeTask2 {
 
             switch (task){
                 case 1:
-                    task1();
+                    averageOfAAndB();
                     System.out.println("1.Назад 2.Выключить");
                     back = goBack.nextByte();
                     if (back == 1){
@@ -29,7 +29,7 @@ public class HomeTask2 {
                         return;
                     }
                 case 2:
-                    task2();
+                    averageOfArray();
                     System.out.println("1.Назад 2.Выключить");
                     back = goBack.nextByte();
                     if (back == 1){
@@ -38,7 +38,7 @@ public class HomeTask2 {
                         return;
                     }
                 case 3:
-                    task3();
+                    bankPercentage();
                     System.out.println("1.Назад 2.Выключить");
                     back = goBack.nextByte();
                     if (back == 1){
@@ -51,7 +51,7 @@ public class HomeTask2 {
     }
 
 
-    public static  void task1(){
+    public static  void averageOfAAndB(){
         int a = 4;
         int b = 6;
         int c = (a + b) / 2;
@@ -62,7 +62,7 @@ public class HomeTask2 {
         System.out.println("===========================================");
     }
 
-    public static void task2(){
+    public static void averageOfArray(){
 
         ArrayList<Integer> numbers = new ArrayList();
 
@@ -90,7 +90,7 @@ public class HomeTask2 {
 
     public static final String FORMAT_DOUBLE = "#0.00";
 
-    public static void task3(){
+    public static void bankPercentage(){
 
         double money;
         double percent = 0;
