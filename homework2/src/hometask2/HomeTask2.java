@@ -16,6 +16,9 @@ public class HomeTask2 {
             Scanner goBack = new Scanner(System.in);
 
             System.out.println("Какое задание хотите посмотреть? [1, 2, 3]");
+            System.out.println("1. Среднее арифметическое А и B");
+            System.out.println("2. Среднее арифметическое произвольного кол-ва чисел");
+            System.out.println("3. Процент в банке");
             task = switchTask.nextByte();
 
             switch (task){
@@ -46,6 +49,8 @@ public class HomeTask2 {
                     }else if (back == 2){
                         return;
                     }
+                default:
+                    System.out.println("Некоректный ввод. Введите еще раз.");
             }
         }
     }
