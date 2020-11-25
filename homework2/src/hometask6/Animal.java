@@ -1,14 +1,13 @@
-package hometask5;
+package hometask6;
 
-
-abstract public class Animal {
+public class Animal implements Voice{
 
     private int id;
     private int age;
-    private int weight;
+    private double weight;
     private String color;
 
-    public Animal(int id, int age, int weight, String color){
+    public Animal(int id, int age, double weight, String color){
         this.id = id;
         this.age = age;
         this.weight = weight;
@@ -24,7 +23,7 @@ abstract public class Animal {
         return age;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -49,12 +48,9 @@ abstract public class Animal {
         this.color = color;
     }
 
-    public String voice(){
-
+    @Override
+    public String voice() {
         String animalVoice = "Hello, ";
-
         return animalVoice;
     }
-
-
 }
