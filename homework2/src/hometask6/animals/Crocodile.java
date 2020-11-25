@@ -1,10 +1,9 @@
 package hometask6.animals;
 
 import hometask6.GetInfo;
-import hometask6.Voice;
 import hometask6.WildAnimal;
 
-public class Crocodile extends WildAnimal implements GetInfo, Voice {
+public class Crocodile extends WildAnimal implements GetInfo {
 
     public Crocodile(boolean isPredator, int id, int age, double weight, String color) {
         super(isPredator, id, age, weight, color);

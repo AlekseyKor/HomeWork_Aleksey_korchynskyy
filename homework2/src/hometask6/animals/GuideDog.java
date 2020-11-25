@@ -2,9 +2,8 @@ package hometask6.animals;
 
 import hometask6.DomesticAnimal;
 import hometask6.GetInfo;
-import hometask6.Voice;
 
-public class GuideDog extends DomesticAnimal implements GetInfo, Voice {
+public class GuideDog extends DomesticAnimal implements GetInfo {
 
     private boolean isTrained;
 
