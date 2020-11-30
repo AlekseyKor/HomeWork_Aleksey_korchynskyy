@@ -19,11 +19,10 @@ public class Collection<T> {
     }
 
     // Метод для доставания по индексу
-    public T get(int index){
-
+    public Object get(int index){
         if (index <= pointer){
             return (T) array[index];
-        }else return null;
+        }else return "You are trying to get wrong index!";
     }
 
     // Метод удаления
