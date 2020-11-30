@@ -27,6 +27,7 @@ public class CollectionMain {
         }
 
         System.out.println(array.get(20));
+        System.out.println(array.get(-20));
 
     }
 }

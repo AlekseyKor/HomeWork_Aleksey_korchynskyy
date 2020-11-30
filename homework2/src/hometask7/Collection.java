@@ -20,7 +20,7 @@ public class Collection<T> {
 
     // Метод для доставания по индексу
     public Object get(int index){
-        if (index <= pointer){
+        if (index <= pointer && index >= 0){
             return (T) array[index];
         }else return "You are trying to get wrong index!";
     }
