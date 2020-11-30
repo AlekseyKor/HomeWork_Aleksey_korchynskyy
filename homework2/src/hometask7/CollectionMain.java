@@ -26,5 +26,7 @@ public class CollectionMain {
             System.out.println("[" + i + "] : " + array.get(i));
         }
 
+        System.out.println(array.get(20));
+
     }
 }

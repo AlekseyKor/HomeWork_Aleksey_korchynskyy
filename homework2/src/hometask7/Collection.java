@@ -1,5 +1,6 @@
 package hometask7;
 
+import java.util.Arrays;
 
 public class Collection<T> {
 
@@ -19,7 +20,10 @@ public class Collection<T> {
 
     // Метод для доставания по индексу
     public T get(int index){
-        return (T) array[index];
+
+        if (index <= pointer){
+            return (T) array[index];
+        }else return null;
     }
 
     // Метод удаления
@@ -41,9 +45,7 @@ public class Collection<T> {
 
     // Метод изменения размера массива
     private void resize(int newLength) {
-        Object[] newArray = new Object[newLength];
-        System.arraycopy(array, 0, newArray, 0, pointer);
-        array = newArray;
+        array = Arrays.copyOf(array, newLength);
     }
 
 }
