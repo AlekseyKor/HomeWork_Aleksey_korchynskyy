@@ -2,8 +2,9 @@ package hometask6.animals;
 
 import hometask6.DomesticAnimal;
 import hometask6.GetInfo;
+import hometask6.GuideHome;
 
-public class GuideDog extends DomesticAnimal implements GetInfo {
+public class GuideDog extends DomesticAnimal implements GetInfo, GuideHome {
 
     private boolean isTrained;
 
@@ -38,8 +39,12 @@ public class GuideDog extends DomesticAnimal implements GetInfo {
     }
 
     // Методы
-    public void guideHome(){
-        if (isTrained) System.out.println("Let's go!");
-        else System.out.println("I'm not trained yet.");
+    @Override
+    public String guideHome() {
+        if (isTrained){
+            return "I will take you home!";
+        }else {
+            return "I'm not trained yet.";
+        }
     }
 }

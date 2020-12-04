@@ -1,6 +1,6 @@
 package hometask6;
 
-public class Animal implements Voice{
+public class Animal {
 
     private int id;
     private int age;
@@ -48,9 +48,4 @@ public class Animal implements Voice{
         this.color = color;
     }
 
-    @Override
-    public String voice() {
-        String animalVoice = "Hello, ";
-        return animalVoice;
-    }
 }

@@ -1,6 +1,6 @@
 package hometask6;
 
-public class DomesticAnimal extends Animal{
+public class DomesticAnimal extends Animal implements Voice{
 
     private String name;
     private boolean isVaccinated;
@@ -26,6 +26,6 @@ public class DomesticAnimal extends Animal{
 
     @Override
     public String voice(){
-        return super.voice() + "my name is " + name + ".";
+        return "Hello. my name is " + name + ".";
     }
 }

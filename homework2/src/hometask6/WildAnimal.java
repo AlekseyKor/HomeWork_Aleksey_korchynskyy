@@ -1,6 +1,6 @@
 package hometask6;
 
-public class WildAnimal extends Animal{
+public class WildAnimal extends Animal implements Voice {
 
     private boolean isPredator;
 
@@ -21,8 +21,8 @@ public class WildAnimal extends Animal{
     public String voice() {
 
         if (isPredator == true){
-            return super.voice() + "I am a wild animal, and i am angry";
-        }else return super.voice() + "I am a wild animal.";
+            return "Hello. I am a wild animal, and i am angry";
+        }else return "Hello. I am a wild animal.";
 
     }
 }

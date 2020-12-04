@@ -38,7 +38,7 @@ public class AnimalMain {
         GuideDog guideDog = new GuideDog("Sardelka", true, true, 68465, 6, 7.6, "Brown");
         System.out.println(guideDog.voice());
         guideDog.info();
-        guideDog.guideHome();
+        System.out.println(guideDog.guideHome());
 
         System.out.println("==================================");
 
