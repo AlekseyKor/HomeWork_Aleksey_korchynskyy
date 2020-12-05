@@ -83,14 +83,13 @@ public class Collection8<S> implements InterfaceCollection<S> {
 
     @Override
     public boolean equals(Collection8 o) {
-        if (this.pointer == o.pointer){
 
+        if (this.pointer == o.pointer){
             for (int i = 0; i < pointer; i++) {
-                if (this.array[i] == o.array[i]) return true;
+                if (this.array[i] != o.array[i]) return false;
             }
         }
-
-        return false;
+        return true;
     }
 
 
