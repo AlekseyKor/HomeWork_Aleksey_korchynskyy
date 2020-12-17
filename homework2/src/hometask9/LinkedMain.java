@@ -15,7 +15,7 @@ public class LinkedMain {
         a1.add("5");
 
         LinkedCollection<String> a2 = new LinkedCollection<String>();
-
+        // Добавление
         a2.add("1");
         a2.add("2");
         a2.add("3");
@@ -26,7 +26,7 @@ public class LinkedMain {
         System.out.println("a1 size = " + a1.size());
 
         System.out.println("---------------------");
-
+        //Удаление по индексу и значению
         a1.delete(3);
         a1.delete("1");
         a2.delete("1");
@@ -34,11 +34,11 @@ public class LinkedMain {
         System.out.println("a1 size = " + a1.size());
 
         System.out.println("---------------------");
-
+        // Проверка на содержание в элементе значения
         System.out.println("a1 contains 3 ---> " + a1.contains("3"));
 
         System.out.println("---------------------");
-
+        // Сравнение двух коллекций
         System.out.println("a1 = " + a1.toString());
         System.out.println("a2 = " + a2.toString());
         System.out.println("a1 == a2 ---> " + a1.compare(a2));
